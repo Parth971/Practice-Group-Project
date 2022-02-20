@@ -2,42 +2,40 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* Common classess  */
+.btn-theme {
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
 
-/* main-section  */
+
+/* Section: main-section -> it has header and main-page section */
 .main-section {
-    background-image: url('/assets/media/images/background.jpg');
-    /* height: 500px; */
+    background-image: url('/assets/media/images/header-background.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
-/* header  */
+/* Section : header  */
 .header {
     padding: 40px;
-    /* background-color: #d4d4d4; */
 }
-
-/* logo  */
 .header .logo-container img {
     height: 50px;
     width: auto;
 }
-
-/* logo name  */
 .header .logo-name {
     font-size: 32px;
     font-weight: bold;
     color: #3557ff;
 }
-
 .header .logo-content {
     font-size: 9px;
     padding-left: 25px;
 }
-
-
 .header .rating-image-container {
     position: relative;
     margin-left: 20px;
@@ -57,35 +55,26 @@ html, body {
     font-size: 26px;
     font-weight: bold;
 }
-
 .header .rating {
     padding-left: 145px;
 }
-
 .header .social-media-content {
     font-size: 18px;
     font-weight: bold;
 }
-
 .header .social-media-icons>i {
     margin-top: 10px;
     margin-left: 4px;
     margin-right: 4px;
     color: #3557ff;
 }
-
 .header .call-me-back {
-    background-color: #3557ff;
-    color: #fff;
     padding: 15px 20px;
-    border-radius: 5px;
 }
-
 .header .call-me-back p {
     margin: 0;
     font-size: 20px;
 }
-
 .header .address {
     font-size: 15px;
 }
@@ -94,7 +83,7 @@ html, body {
 }
 
 
-
+/* Section : main-page  */
 .main-page .main-page-services {
     padding: 10px;
 }
@@ -105,28 +94,21 @@ html, body {
 .main-page .main-page-services p {
     margin-top: 30px;
 }
-
 .main-page .main-page-services .our-services-btn {
-    background-color: blue;
     padding: 15px 60px;
-    border-radius: 10px;
     display: inline-block;
-    color: white;
 }
-
 .main-page .enquiry {
     padding: 10px 38px;
     background-color: white;
     border-radius: 5px;
 }
-
 .main-page .enquiry h1 {
     margin-top: 20px;
 }
 .main-page .enquiry p {
     margin-top: 15px;
 }
-
 .main-page .enquiry .custom-form-control {
     display: block;
     width: 100%;
@@ -145,12 +127,12 @@ html, body {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     outline: none
 }
-
 .main-page .enquiry button {
-    background-color: blue;
     width: 100%;
     padding: 15px 60px;
-    border-radius: 10px;
     display: inline-block;
-    color: white;
+}
+.main-page .main-page-services, .main-page .enquiry {
+    margin-bottom: 70px;
+    margin-top: 50px;
 }
