@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-header img {
+    width: 100px;
+}
+
+.profile-wrapper {
+    position: relative;
+}
+.profile-imaage-container {
+    width: 55%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.profile-imaage-container img {
+    width: 100%;
+}
+.profile-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 700px;
+    padding: 150px 100px 130px 100px;
+    left: 600px;
+    top: 35px;
+}

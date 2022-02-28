@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.say-hello-container {
+    margin: 50px 0;
+}
+.say-hello-container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.say-hello-container>h1:nth-child(1) {
+    color: rgb(173, 173, 173)
+}
+.say-hello-container>h1:nth-child(2) {
+    margin-left: 15px;
+    margin-top: -20px;
+}
+
+.contact-wrapper {
+    box-shadow: 10px 20px 30px rgb(182, 182, 182);
+}
+.contact-wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact-wrapper>div {
+    float: left
+}
+.contact-form {
+    width: 70%;
+    background-color: #f7f7f7;
+    padding: 130px 130px;
+}
+.contact-form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact-form input, .contact-form textarea {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    color: rgb(77, 77, 77);
+    background-color:transparent;
+    width: 330px;
+}
+.contact-form textarea {
+    min-height: 100px;
+    width: 100%;
+}
+.contact-form button {
+    float: right;
+    background-color: transparent;
+    font-size: 30px;
+    border: 0;
+    font-weight: bold;
+}
+
+.contact-details {
+    width: 30%;
+    background-image: url('../media/images/conatact-texture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 641px;
+}
+
+.contact-detail-box {
+    padding: 20px 50px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    margin: 5px 0;
+    width: 290px;
+    margin-left: -30px;
+}
+.contact-details>div:nth-child(1) {
+    margin-top: 220px;
+}

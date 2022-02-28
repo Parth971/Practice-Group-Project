@@ -12,7 +12,7 @@ html, body {
 
 /* Section: main-section -> it has header and main-page section */
 .main-section {
-    background-image: url('/assets/media/images/header-background.jpg');
+    background-image: url('../media/images/header-background.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -167,6 +167,7 @@ html, body {
 .learn-more-image-container img {
     width: 300px;
     height: 250px;
+    width: 100%;
 }
 
 /* learn-more content  */
