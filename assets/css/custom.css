@@ -141,6 +141,8 @@ html, body {
 
 /* global effects starts */
 
+/* IMPORTANAT EFFECT FOR ALL PAGES[DECLARED AS DATA-1] */
+
 .data-1:hover{
     transform: translateY(-30px);
 }
@@ -163,7 +165,8 @@ html, body {
 
 /* learn-more image  */
 .learn-more-image-container img {
-    width: 100%;
+    width: 300px;
+    height: 250px;
 }
 
 /* learn-more content  */
@@ -205,6 +208,7 @@ html, body {
 /* all-data image  */
 .all-data-image-container img {
     width: 100%;
+    height: 250px;
 }
 
 /* all-data content  */
@@ -214,5 +218,154 @@ html, body {
 }
 
 /* all-data-section end */
+
+/* Services section start */
+
+.service-head-content {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* service image  */
+.service-image-container {
+	margin-bottom: 40px;
+	position: relative;
+}
+.service-image-container:hover {
+	cursor: pointer;
+}
+.service-image-container img {
+	width: 100%;
+	height: 200px;
+	transition: .5s ease;
+}
+
+.service-image-overlay-container {
+	background-color: #242222ce;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	height: 200px;
+	width: 100%;
+}
+
+.service-image-container:hover .service-image {
+	opacity: 0.9;
+}
+.service-image-container:hover .service-image-overlay-container {
+	opacity: 0.8;
+}
+.service-image-overlay-container .overlay-content {
+	padding: 50px 40px;
+}
+.service-image-overlay-container .overlay-content p:nth-child(1) {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
+
+.service-image-overlay-container .overlay-content p:nth-child(2) {
+	margin-top: 2px;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 300;
+	color: white;
+}
+.service-image-overlay-container .overlay-content .arrow-icon i{
+	font-size: 20px;	
+	color: white;
+}
+
+/* Services section end */
+
+/* footer section start */
+.footer-contact-details .footer-logo-img img{
+	height: 56px;
+    width: 90px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.footer-contact-details .footer-logo-container p{
+	margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.footer-contact-details .faltu-brand-logo img{
+    height: 60px;
+    width: 60px;
+}
+
+.footer-contact-details .footer-contact-info{
+    position: relative;
+}
+
+
+.footer-contact-details .footer-contact-info p{
+   font-size: 34px;
+   position: absolute;
+}
+
+.footer-contact-details .footer-rating-details p{
+    left: 120px;
+    position: absolute;
+    margin-top: 9px;
+}
+
+.footer-contact-details .footer-rating-stars{
+    margin-top: 45px;
+    position: absolute;
+    
+}
+
+.footer-contact-details .copyright{
+    position: absolute;
+    margin-top: 95px;
+}
+
+
+.footer-contact-details .footer-contact-section {
+    margin-left: -30px;
+}
+
+.footer-contact-details .footer-contact-section h4{
+    margin-bottom: 15px;
+}
+.footer-contact-details .footer-contact-section p{
+    line-height: 20px;
+}
+
+.footer-contact-details .footer-contact-section i{
+    margin-right: 12px;
+}
+
+.footer-contact-details .footer-business-section .business-details h4{
+    margin-bottom: 15px;
+}
+.footer-contact-details .footer-business-section .business-details{
+    line-height: 20px;
+}
+
+.footer-contact-details .footer-business-section .business-follow{
+    margin-top: 20px;
+}
+
+.footer-contact-details .footer-manu-section{
+    position: relative;
+    left: -30px;
+}
+
+.footer-contact-details .footer-manu-section-ultra{
+    position: absolute;
+
+}
+
+
+/* footer section end */
 
 /*------ work by steffy side ends-------*/

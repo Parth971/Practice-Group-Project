@@ -1,0 +1,103 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+   a{ text-decoration: none; }
+   a:hover{text-decoration: none;}
+   li{list-style:none;}
+   p{
+       font-size: 0.9rem;
+       line-height: 1.6;
+       font-weight: 400;
+        
+   }
+
+   .data{
+       background-color: black;
+       color: white;
+       text-align: center;
+       margin-top: 25px;
+       padding: 25px;
+   }
+   .extra-div h2, .servicediv h2{
+       font-size: 1.2rem;
+       margin: 20px 0 15px 0;
+       font-weight: bold;
+       line-height:1.1;
+       word-spacing: 4px;  
+   
+   }
+   
+   i{
+       color: #000000!important;
+   }
+   
+   
+   /**extra header div css start**/
+   
+   .header-extradiv{
+       width: 100%;height: auto;
+       /* margin: 100px 0; */
+       text-align: center;
+       background-color:gray;
+    
+   }
+   
+   .extra-div{
+       /* background: #fff; */
+       background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.349));
+       border: medium none;
+       padding: 50px!important;
+       border-radius: 35px;
+       transition: 0.3s;
+       margin: 0 ;
+       margin-bottom: 40px;
+       color: black;
+   }
+   
+   .extra-div:hover{
+       box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+       transform: translateY(-20px);
+   }
+
+   .margin-space{
+       margin-top: 25px;
+   }
+   
+   /******extra div end****/
+   /******service offer css start****/
+   .serviceffers{
+       
+       padding: 50px!important;
+       margin-bottom: 50px!important;
+       background-image: linear-gradient(rgb(140, 198, 253), rgba(0, 38, 255, 0.349));
+       color: white;
+   }
+   
+   .headings{
+       margin-bottom: 50px!important;
+   }
+   
+   .heading h1{
+       font-size: 1.5rem!important;
+       font-weight: 600!important;
+       text-transform: uppercase!important;
+   }
+   
+   .names h1{
+       
+       font-size: 0.9rem!important;
+       text-transform: capitalize!important;
+       font-weight: bold!important;
+   }
+   
+   .service-icons{
+       display: flex!important;
+       justify-content: center!important;
+       align-items: center!important;
+   }
+   /******service offer css end****/
