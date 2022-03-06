@@ -20,47 +20,60 @@ html, body {
 
 
 /* Section : header  */
-.header {
-    padding: 40px;
+.header .logo-wrapper {
+    margin-top: 50px;
+}
+.header .logo-img-title::after {
+    content: '';
+    clear: both;
+    display: block;
+
 }
 .header .logo-container img {
     height: 50px;
     width: auto;
+    float: left;
 }
 .header .logo-name {
     font-size: 32px;
     font-weight: bold;
     color: #3557ff;
+    float: left;
 }
 .header .logo-content {
     font-size: 9px;
-    padding-left: 25px;
+}
+.header .rating-wrapper {
+    margin-top: 50px;
 }
 .header .rating-image-container {
     position: relative;
-    margin-left: 20px;
+    height: 100px;
+    float: left;
+    width: 80px;
+    margin-top: -52px;
 }
 .header .rating-image-container img {
-    width: 130px;
-    height: auto;
-    position: absolute;
-    top: -100px;
-    z-index: 1;
+    transform: scale(0.5) translate(-100px, -160px);
 }
 .header .rating-image-container p {
     position: absolute;
     z-index: 2;
-    left: 45px;
-    top: 0;
+    left: 25px;
+    top: 50px;
     font-size: 26px;
     font-weight: bold;
 }
 .header .rating {
-    padding-left: 145px;
+    float: left;
+}
+.header .rating-content {
+    font-size: 12px;
 }
 .header .social-media-content {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 50px;
 }
 .header .social-media-icons>i {
     margin-top: 10px;
@@ -70,16 +83,23 @@ html, body {
 }
 .header .call-me-back {
     padding: 15px 20px;
+    margin-top: 50px;
 }
 .header .call-me-back p {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
 }
 .header .address {
     font-size: 15px;
+    min-width: 150px;
+    text-align: right;
+    margin-top: 50px;
 }
 .header .phone {
-    font-size: 15px
+    font-size: 15px;
+    width: 150px;
+    text-align: right;
+    margin-top: 50px;
 }
 
 
@@ -133,7 +153,7 @@ html, body {
     display: inline-block;
 }
 .main-page .main-page-services, .main-page .enquiry {
-    margin-bottom: 70px;
+    margin-bottom: 125px;
     margin-top: 50px;
 }
 
@@ -152,39 +172,32 @@ html, body {
 /* learn-more-section start */
 
 .learn-more{
-    /* background-color: rgb(165, 242, 255); */
-    background-image: linear-gradient(rgb(140, 198, 253), rgba(0, 38, 255, 0.349));
-    color: rgb(0, 0, 0);
-    padding: 25px;
     text-align: center;
+    padding: 155px 0;
+    background-image: url('../media/images/header-background.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .learn-more-container {
-    margin-bottom: 60px;
     margin-top: 60px;
 }
 
 /* learn-more image  */
 .learn-more-image-container img {
-    width: 300px;
     height: 250px;
     width: 100%;
 }
 
 /* learn-more content  */
 .learn-more-content {
-    /* background-color: #050505; */
     padding: 30px 20px;
-    color: rgb(0, 0, 0);
 }
 
 /* learn-more btn  */
-.btn-learn-more .btn{
-    color: #ffffff;
-    background-color: rgb(0, 26, 255);
-}
-.btn-learn-more .btn:hover{
-    color: #000000;
-    background-color: rgb(0, 255, 85);
+.btn-learn-more .btn-theme {
+    display: inline-block;
+    padding: 10px 15px;   
 }
 /* learn-more-section end */
 
@@ -192,24 +205,26 @@ html, body {
 
 /* all-data-section start */
 .all-data{
-    /* background-color: grey; */
-    background-image: linear-gradient(rgb(140, 198, 253), rgba(0, 38, 255, 0.349));
-    color: white;
-    padding: 25px;
+    background-image: url('../media/images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
+    padding: 100px 0 180px 0;
+}
+.all-data .learn-more-heading {
+    margin: 30px 0;
 }
 .all-data-container {
-    margin-bottom: 60px;
-    margin-top: 60px;
+    margin-top: 30px;
     /* NOTE THIS */
-    width: 295px; 
     background-color: rgb(255, 255, 255);
     
 }
 /* all-data image  */
 .all-data-image-container img {
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
 
 /* all-data content  */
@@ -221,7 +236,22 @@ html, body {
 /* all-data-section end */
 
 /* Services section start */
+.services-section {
+    background-image: url('../media/images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
 
+.services-section .btn-view {
+    text-align: center;
+}
+.services-section .btn-theme {
+    display: inline-block;
+    padding: 15px 30px;
+}
 .service-head-content {
 	text-align: center;
 	margin-bottom: 40px;
@@ -237,7 +267,7 @@ html, body {
 }
 .service-image-container img {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	transition: .5s ease;
 }
 
@@ -251,7 +281,7 @@ html, body {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
-	height: 200px;
+	height: 250px;
 	width: 100%;
 }
 
@@ -262,7 +292,7 @@ html, body {
 	opacity: 0.8;
 }
 .service-image-overlay-container .overlay-content {
-	padding: 50px 40px;
+	padding: 80px 40px;
 }
 .service-image-overlay-container .overlay-content p:nth-child(1) {
 	font-size: 20px;
@@ -277,96 +307,199 @@ html, body {
 	font-weight: 300;
 	color: white;
 }
-.service-image-overlay-container .overlay-content .arrow-icon i{
-	font-size: 20px;	
-	color: white;
-}
 
 /* Services section end */
 
 /* footer section start */
-.footer-contact-details .footer-logo-img img{
-	height: 56px;
-    width: 90px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
 }
-.footer-contact-details .footer-logo-container p{
-	margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 12px;
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
 }
-
-.footer-contact-details .faltu-brand-logo img{
-    height: 60px;
-    width: 60px;
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-.footer-contact-details .footer-contact-info{
-    position: relative;
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
 }
-
-
-.footer-contact-details .footer-contact-info p{
-   font-size: 34px;
-   position: absolute;
-}
-
-.footer-contact-details .footer-rating-details p{
-    left: 120px;
-    position: absolute;
-    margin-top: 9px;
-}
-
-.footer-contact-details .footer-rating-stars{
-    margin-top: 45px;
-    position: absolute;
-    
-}
-
-.footer-contact-details .copyright{
-    position: absolute;
-    margin-top: 95px;
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
 }
 
-
-.footer-contact-details .footer-contact-section {
-    margin-left: -30px;
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
 }
-
-.footer-contact-details .footer-contact-section h4{
-    margin-bottom: 15px;
+.clearfix {
+  clear: both;
 }
-.footer-contact-details .footer-contact-section p{
-    line-height: 20px;
+@media only screen and (max-width: 1139px) {
+  .social h1 {
+    margin: 0px;
+  }
 }
-
-.footer-contact-details .footer-contact-section i{
-    margin-right: 12px;
+@media only screen and (max-width: 950px) {
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
 }
-
-.footer-contact-details .footer-business-section .business-details h4{
-    margin-bottom: 15px;
+@media only screen and (max-width: 500px) {
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
 }
-.footer-contact-details .footer-business-section .business-details{
-    line-height: 20px;
-}
-
-.footer-contact-details .footer-business-section .business-follow{
-    margin-top: 20px;
-}
-
-.footer-contact-details .footer-manu-section{
-    position: relative;
-    left: -30px;
-}
-
-.footer-contact-details .footer-manu-section-ultra{
-    position: absolute;
-
-}
-
 
 /* footer section end */
 
 /*------ work by steffy side ends-------*/
+
+
+
+/* responsive */
+
+@media (max-width: 1199px) { 
+    .header .rating {
+        margin: 40px auto 0 auto;
+        float: none;
+        width: 90px;
+    }
+    .header .rating-image-container {
+        float: none;
+        margin-top: -52px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 92px;
+    }
+}
+
+@media (max-width: 991px) {
+    .data-1:hover{
+        transform: none;
+    }
+    .header .rating {
+        margin: 0;
+        float: left;
+        width: auto;
+    }
+    .header .rating-image-container {
+        float: left;
+        margin-top: -52px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 80px;
+    }
+    .main-page .main-page-services .our-services-btn {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .learn-more {
+        padding: 70px 0;
+    }
+    .btn-learn-more .btn-theme {
+        margin-top: 10px;
+    }
+
+    .learn-more-image-container img {
+        height: 150px;
+    }
+
+    .all-data-image-container img {
+        height: 230px;
+    }
+
+    .all-data {
+        padding: 70px 0 70px 0;
+    }
+
+    .services-section {
+        padding: 25px 0 25px 0;
+    }
+    
+    .service-image-overlay-container .overlay-content p:nth-child(1) {
+        font-size: 15px;
+    }
+    
+    .service-image-overlay-container .overlay-content p:nth-child(2) {
+        margin-top: 1px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .rating-wrapper, .header .social-media-content, .header .social-media-icons, .header .call-me-back, .header .address, .header .phone {
+        display: none;
+    }
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+    .main-page .main-page-services h1 {
+        font-size: 40px;
+    }
+    .main-page .main-page-services, .main-page .enquiry {
+        margin-bottom: 40px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .learn-more-image-container img {
+        height: 300px;
+    }
+
+    .all-data-image-container img {
+        height: 300px;
+    }
+
+    .service-image-container img {
+        height: 300px;
+    }    
+    .service-image-overlay-container {
+        height: 300px;
+    }
+    .service-image-overlay-container .overlay-content {
+        padding: 100px;
+    }
+    .service-image-overlay-container .overlay-content p:nth-child(1) {
+        font-size: 15px;
+    }
+    .service-image-overlay-container .overlay-content p:nth-child(2) {
+        margin-top: 1px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

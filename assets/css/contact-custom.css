@@ -3,8 +3,8 @@ html, body {
     padding: 0;
 }
 
-.say-hello-container {
-    margin: 50px 0;
+.contact-section {
+    padding: 15px 0 45px 0;
 }
 .say-hello-container h1 {
     font-size: 60px;
